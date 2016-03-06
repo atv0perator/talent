@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Segoe UI"), local("Open Sans"), local("OpenSans"), url(../fonts/K88pR3goAWT7BTt32Z01mz8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+body {
+  background: #1d1d1d;
+  font-family: "Segoe UI", "Open Sans", sans-serif, serif;
+  font-size: .875rem;
+  line-height: 1.1;
+  font-weight: 400;
+  font-style: normal;
+}
+.fg-white {
+  color: #fff !important;
+}
+/* ---- grid ---- */
+.grid {
+  max-width: 1200px;
+}
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* ---- grid-item ---- */
+.grid-item {
+  float: left;
+  padding: 5px;
+}
+.grid-content {
+  width: 100%;
+  height: 100%;
+  background: #D26;
+  border: 1px #373737 solid;
+}
+.grid-content img {
+  width: 51.2px;
+  height: 51.2px;
+  margin-left: -25.6px;
+  margin-top: -32px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  display: block;
+  max-width: 50%;
+}
+.grid-content .tile-label {
+  position: absolute;
+  bottom: 10px;
+  left: .625rem;
+  padding: .425rem .25rem;
+  z-index: 999;
+}
+@media only screen and (min-width: 200px) {
+  .grid-sizer,
+  .grid-item {
+    width: 50%;
+    height: 47.5vw;
+  }
+  .grid-item--width2 {
+    width: 100%;
+  }
+  .grid-item--width3 {
+    width: 100%;
+  }
+  .grid-item--height2 {
+    height: 95vw;
+  }
+  .grid-item--height3 {
+    height: 95vw;
+  }
+}
+@media only screen and (min-width: 300px) {
+  .grid-sizer,
+  .grid-item {
+    width: 33.333%;
+    height: 31.666vw;
+  }
+  .grid-item--width2 {
+    width: 66.666%;
+  }
+  .grid-item--width3 {
+    width: 99.999%;
+  }
+  .grid-item--height2 {
+    height: 63.332vw;
+  }
+  .grid-item--height3 {
+    height: 94.998vw;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .grid-sizer,
+  .grid-item {
+    width: 25%;
+    height: 23.75vw;
+  }
+  .grid-item--width2 {
+    width: 50%;
+  }
+  .grid-item--width3 {
+    width: 75%;
+  }
+  .grid-item--height2 {
+    height: 47.5vw;
+  }
+  .grid-item--height3 {
+    height: 71.25vw;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .grid-sizer,
+  .grid-item {
+    width: 20%;
+    height: 19vw;
+  }
+  .grid-item--width2 {
+    width: 40%;
+  }
+  .grid-item--width3 {
+    width: 60%;
+  }
+  .grid-item--height2 {
+    height: 38vw;
+  }
+  .grid-item--height3 {
+    height: 57vw;
+  }
+}
